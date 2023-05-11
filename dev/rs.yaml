@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: readinglist.com
+  name: readinglist
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: readinglist.com
+      app: readinglist
   template:
     metadata:
       labels:
-        app: readinglist.com
+        app: readinglist
     spec:
       containers:
-      - name: readinglist.com
+      - name: readinglist
         image: crojasmatas/readinglist:0.2
         livenessProbe:
           httpGet:
