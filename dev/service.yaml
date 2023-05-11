@@ -7,5 +7,6 @@ spec:
   selector:
     app: readinglist
   ports:
-  - port: 8181
-    nodePort: 8181
+  - port: 80
+    targetPort: 8181
+    nodePort: 30808
