@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: readinglib-argo-app
@@ -7,12 +7,13 @@ spec:
   project: default
 
   source:
-    repoUrl: https://github.com/carlosrojasmatas/readinglist-ops.git
+    repoURL: https://github.com/carlosrojasmatas/readinglist-ops.git
     targetRevision: HEAD
     path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: readinglist-dev
+  
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

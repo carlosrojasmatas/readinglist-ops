@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: readingList
-        image: crojasma/readinglist:0.1
+        image: crojasmatas/readinglist:0.1
         livenessProbe:
           httpGet:
             port: 8080
