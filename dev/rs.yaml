@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: readingList
+      app: readinglist.com
   template:
     metadata:
       labels:
-        app: readingList
+        app: readinglist.com
     spec:
       containers:
-      - name: readingList
+      - name: readinglist.com
         image: crojasmatas/readinglist:0.2
         livenessProbe:
           httpGet:
