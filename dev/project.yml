@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: reading-list
+  name: readinglist-proj
   namespace: argocd
 spec:
   clusterResourceWhitelist:

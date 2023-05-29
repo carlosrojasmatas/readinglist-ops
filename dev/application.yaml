@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: readinglib-argo-app
+  name: readinglist-app
   namespace: argocd
 spec:
-  project: default
+  project: readinglist-proj
 
   source:
     repoURL: https://github.com/carlosrojasmatas/readinglist-ops.git
