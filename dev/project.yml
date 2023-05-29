@@ -1,0 +1,15 @@
+kind: AppProject
+metadata:
+  name: reading-list
+  namespace: dev-1-18-devops-argocd-ns
+spec:
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - namespace: readinglist-dev
+    server: https://kubernetes.default.svc
+  orphanedResources:
+    warn: false
+  sourceRepos:
+  - '*'
