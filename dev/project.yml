@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: reading-list
-  namespace: dev-1-18-devops-argocd-ns
+  namespace: argocd
 spec:
   clusterResourceWhitelist:
   - group: '*'
