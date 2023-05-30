@@ -5,7 +5,6 @@ metadata:
   namespace: argocd
 spec:
   project: readinglist-proj
-
   source:
     repoURL: https://github.com/carlosrojasmatas/readinglist-ops.git
     targetRevision: HEAD
@@ -13,11 +12,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: readinglist-dev
-  
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-    
     automated:
       selfHeal: true
       prune: true

@@ -7,6 +7,9 @@ spec:
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
   destinations:
   - namespace: readinglist-dev
     server: https://kubernetes.default.svc
